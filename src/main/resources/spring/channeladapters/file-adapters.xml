@@ -19,22 +19,44 @@
 		</property>
 	</bean>
 
-	<file:inbound-channel-adapter id="incoming.file.changed" directory="${incoming.file.directory}"
-		filename-pattern="getLevelData_CATEGORY_CSV.xml">
-	    <integration:poller id="poller" fixed-delay="1000"/>
+	<!-- Channel Adaptor for the file source -->
+	<file:inbound-channel-adapter id="in.file.changed" directory="${incoming.file.directory}"
+		filename-pattern="getLevelData_*_CSV.xml">
+	    <integration:poller id="poller" fixed-delay="10"/>
 	</file:inbound-channel-adapter>
 	
-	<bean id="handler" class="com.williamhill.pds.services.FileChangedNotificationService"/>
-    
-    <integration:service-activator input-channel="incoming.file.changed" output-channel="incoming.file.content" ref="handler"/>
-  
-    <integration:channel id="incoming.file.content"></integration:channel>
-	
-    
-    <!-- MESSAGE SINK for the file content messages -->
-	<bean id="messageSink" class="com.williamhill.pds.services.MessageSink"/>
-	<integration:service-activator input-channel="incoming.file.content" ref="messageSink"/>
-    
+	<!-- Transform File Content TO Message with content as payload -->
+	<bean id="handler" class="com.williamhill.pds.services.FileChangedNotificationService"/> 
+    <integration:service-activator input-channel="in.file.changed" output-channel="in.file.content" ref="handler"/>
+  	
+	<!-- Transform XML Content TO CSV data section only -->
+	<bean id="transformer" class="com.williamhill.pds.services.RecordTransformerService"/>
+	<integration:service-activator input-channel="in.file.content" output-channel="in.transformed.content" ref="transformer"/>
 
+	<!-- Split CSV compound message into a message per CSV line -->
+	<bean id="csvSplitter" class="com.williamhill.pds.services.CsvLineSplitter"/>
+	<integration:splitter id="splitter" ref="csvSplitter" method="splitCsvRecords" input-channel="in.transformed.content" output-channel="outgoing.split.content" />
+	
+	<!-- Route CSV messages according to their OXIREP type -->
+	<integration:header-value-router input-channel="outgoing.split.content" header-name="oxirep.level">
+    	<integration:mapping value="CATEGORY" channel="in.csv.category" />
+    	<integration:mapping value="CLASS" channel="in.csv.class" />
+    	<integration:mapping value="EVENT" channel="in.csv.event" />
+    	<integration:mapping value="MARKET" channel="in.csv.market" />
+    	<integration:mapping value="OUTCOME" channel="in.csv.outcome" />
+    	<integration:mapping value="SPORT" channel="in.csv.sport" />
+    	<integration:mapping value="TYPE" channel="in.csv.type" />
+	</integration:header-value-router>
+
+    <!-- MESSAGE SINK for the the final stage -->
+	<bean id="messageSink" class="com.williamhill.pds.services.MessageSink"/>
+	
+	<integration:service-activator input-channel="in.csv.category" ref="messageSink"/>
+	<integration:service-activator input-channel="in.csv.class" ref="messageSink"/>
+	<integration:service-activator input-channel="in.csv.event" ref="messageSink"/>
+	<integration:service-activator input-channel="in.csv.market" ref="messageSink"/>
+	<integration:service-activator input-channel="in.csv.outcome" ref="messageSink"/>
+	<integration:service-activator input-channel="in.csv.sport" ref="messageSink"/>
+	<integration:service-activator input-channel="in.csv.type" ref="messageSink"/>	    
 </beans>
 
