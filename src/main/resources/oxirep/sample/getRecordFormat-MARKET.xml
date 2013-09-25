@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--OXi oxirepserver 8.0 getRecordFormat-->
+<oxip version="8.0" time="2013-08-29 16:21:55">
+    <auth token=""/>
+    <response code="001" desc="success" debug="" name="getRecordFormat" sessionId="-1" userId="-1" delimiter="|" escape="\" mapping="">
+        <header>
+            <field index="0" name="type"/>
+            <field index="1" name="level"/>
+            <field index="2" name="id"/>
+            <field index="3" name="pkValue"/>
+            <field index="4" name="scope"/>
+            <field index="5" name="queue"/>
+            <field index="6" name="auditId"/>
+            <field index="7" name="created"/>
+            <field index="8" name="creator"/>
+            <field index="9" name="sequenceId"/>
+            <field index="10" name="pollSize"/>
+            <field index="11" name="priority"/>
+            <field index="12" name="deltaColumns"/>
+        </header>
+        <level name="MARKET">
+            <field index="13" name="ev_mkt_id" convert=""/>
+            <field index="14" name="name" convert=""/>
+            <field index="15" name="user_id" convert=""/>
+            <field index="16" name="cr_date" convert=""/>
+            <field index="17" name="ev_id" convert=""/>
+            <field index="18" name="ev_oc_grp_id" convert=""/>
+            <field index="19" name="ext_key" convert=""/>
+            <field index="20" name="status" convert=""/>
+            <field index="21" name="fo_avail" convert=""/>
+            <field index="22" name="type" convert=""/>
+            <field index="23" name="sort" convert=""/>
+            <field index="24" name="xmul" convert=""/>
+            <field index="25" name="displayed" convert=""/>
+            <field index="26" name="disporder" convert=""/>
+            <field index="27" name="tax_rate" convert=""/>
+            <field index="28" name="ew_avail" convert=""/>
+            <field index="29" name="pl_avail" convert=""/>
+            <field index="30" name="pl_void" convert=""/>
+            <field index="31" name="ew_fac_num" convert=""/>
+            <field index="32" name="ew_fac_den" convert=""/>
+            <field index="33" name="ew_places" convert=""/>
+            <field index="34" name="ew_with_bet" convert=""/>
+            <field index="35" name="racing_hcap" convert=""/>
+            <field index="36" name="lp_avail" convert=""/>
+            <field index="37" name="sp_avail" convert=""/>
+            <field index="38" name="gp_avail" convert=""/>
+            <field index="39" name="pm_avail" convert=""/>
+            <field index="40" name="ep_active" convert=""/>
+            <field index="41" name="feed_updateable" convert=""/>
+            <field index="42" name="dor_close" convert=""/>
+            <field index="43" name="lp_susp_by_feed" convert=""/>
+            <field index="44" name="lp_open_pending" convert=""/>
+            <field index="45" name="fc_avail" convert=""/>
+            <field index="46" name="tc_avail" convert=""/>
+            <field index="47" name="acc_min" convert=""/>
+            <field index="48" name="acc_max" convert=""/>
+            <field index="49" name="hcap_value" convert=""/>
+            <field index="50" name="hcap_step" convert=""/>
+            <field index="51" name="hcap_steal" convert=""/>
+            <field index="52" name="hcap_makeup" convert=""/>
+            <field index="53" name="spread_lower" convert=""/>
+            <field index="54" name="spread_upper" convert=""/>
+            <field index="55" name="spread_makeup" convert=""/>
+            <field index="56" name="min_spread_cap" convert=""/>
+            <field index="57" name="max_spread_cap" convert=""/>
+            <field index="58" name="liab_group" convert=""/>
+            <field index="59" name="result_conf" convert=""/>
+            <field index="60" name="settled" convert=""/>
+            <field index="61" name="channels" convert=""/>
+            <field index="62" name="blurb" convert="url"/>
+            <field index="63" name="prc_valid_time" convert=""/>
+            <field index="64" name="subst_ev_oc_id_1" convert=""/>
+            <field index="65" name="subst_ev_oc_id_2" convert=""/>
+            <field index="66" name="subst_ev_oc_id_3" convert=""/>
+            <field index="67" name="is_ap_mkt" convert=""/>
+            <field index="68" name="bir_index" convert=""/>
+            <field index="69" name="bir_delay" convert=""/>
+            <field index="70" name="hcap_precision" convert=""/>
+            <field index="71" name="min_bet" convert=""/>
+            <field index="72" name="max_bet" convert=""/>
+            <field index="73" name="sp_max_bet" convert=""/>
+            <field index="74" name="max_pot_win" convert=""/>
+            <field index="75" name="ew_factor" convert=""/>
+            <field index="76" name="bet_in_run" convert=""/>
+            <field index="77" name="tc_stk_factor" convert=""/>
+            <field index="78" name="fc_stk_factor" convert=""/>
+            <field index="79" name="tc_min_stk_limit" convert=""/>
+            <field index="80" name="fc_min_stk_limit" convert=""/>
+            <field index="81" name="flags" convert=""/>
+            <field index="82" name="deriving_mkt_id" convert=""/>
+            <field index="83" name="dbl_res" convert=""/>
+            <field index="84" name="max_multiple_bet" convert=""/>
+            <field index="85" name="lp_exists" convert=""/>
+            <field index="86" name="auto_traded" convert=""/>
+            <field index="87" name="sp_allbets_from" convert=""/>
+            <field index="88" name="sp_allbets_to" convert=""/>
+            <field index="89" name="template_id" convert=""/>
+            <field index="90" name="req_guid" convert=""/>
+            <field index="91" name="max_rule4" convert=""/>
+            <field index="92" name="cashout_avail" convert=""/>
+        </level>
+    </response>
+</oxip>

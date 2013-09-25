@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--OXi oxirepserver 8.0 getRecordFormat-->
+<oxip version="8.0" time="2013-08-29 16:21:57">
+    <auth token=""/>
+    <response code="001" desc="success" debug="" name="getRecordFormat" sessionId="-1" userId="-1" delimiter="|" escape="\" mapping="">
+        <header>
+            <field index="0" name="type"/>
+            <field index="1" name="level"/>
+            <field index="2" name="id"/>
+            <field index="3" name="pkValue"/>
+            <field index="4" name="scope"/>
+            <field index="5" name="queue"/>
+            <field index="6" name="auditId"/>
+            <field index="7" name="created"/>
+            <field index="8" name="creator"/>
+            <field index="9" name="sequenceId"/>
+            <field index="10" name="pollSize"/>
+            <field index="11" name="priority"/>
+            <field index="12" name="deltaColumns"/>
+        </header>
+        <level name="OUTCOME">
+            <field index="13" name="ev_oc_id" convert=""/>
+            <field index="14" name="user_id" convert=""/>
+            <field index="15" name="ev_mkt_id" convert=""/>
+            <field index="16" name="ev_id" convert=""/>
+            <field index="17" name="cr_date" convert=""/>
+            <field index="18" name="status" convert=""/>
+            <field index="19" name="fo_avail" convert=""/>
+            <field index="20" name="desc" convert=""/>
+            <field index="21" name="ext_key" convert=""/>
+            <field index="22" name="shortcut" convert=""/>
+            <field index="23" name="ext_id" convert=""/>
+            <field index="24" name="disporder" convert=""/>
+            <field index="25" name="displayed" convert=""/>
+            <field index="26" name="mult_key" convert=""/>
+            <field index="27" name="result" convert=""/>
+            <field index="28" name="result_conf" convert=""/>
+            <field index="29" name="place" convert=""/>
+            <field index="30" name="sp_num" convert=""/>
+            <field index="31" name="sp_den" convert=""/>
+            <field index="32" name="sp_num_guide" convert=""/>
+            <field index="33" name="sp_den_guide" convert=""/>
+            <field index="34" name="lp_num" convert=""/>
+            <field index="35" name="lp_den" convert=""/>
+            <field index="36" name="feed_updateable" convert=""/>
+            <field index="37" name="last_price_book" convert=""/>
+            <field index="38" name="min_bet" convert=""/>
+            <field index="39" name="max_bet" convert=""/>
+            <field index="40" name="sp_max_bet" convert=""/>
+            <field index="41" name="max_place_sp" convert=""/>
+            <field index="42" name="max_place_lp" convert=""/>
+            <field index="43" name="fb_result" convert=""/>
+            <field index="44" name="cs_home" convert=""/>
+            <field index="45" name="cs_away" convert=""/>
+            <field index="46" name="settled" convert=""/>
+            <field index="47" name="hcap_score" convert=""/>
+            <field index="48" name="runner_num" convert=""/>
+            <field index="49" name="channels" convert=""/>
+            <field index="50" name="result_setter" convert=""/>
+            <field index="51" name="result_confirmer" convert=""/>
+            <field index="52" name="risk_info" convert=""/>
+            <field index="53" name="max_pot_win" convert=""/>
+            <field index="54" name="ew_factor" convert=""/>
+            <field index="55" name="code" convert=""/>
+            <field index="56" name="race_stage" convert=""/>
+            <field index="57" name="is_unnamed_fav" convert=""/>
+            <field index="58" name="lock_stake_lmt" convert=""/>
+            <field index="59" name="has_oc_variants" convert=""/>
+            <field index="60" name="fc_stk_limit" convert=""/>
+            <field index="61" name="tc_stk_limit" convert=""/>
+            <field index="62" name="max_multiple_bet" convert=""/>
+            <field index="63" name="fixed_stake_limits" convert=""/>
+            <field index="64" name="priced_by_feed" convert=""/>
+            <field index="65" name="selection_msg" convert=""/>
+            <field index="66" name="price_changed_at" convert=""/>
+            <field index="67" name="ep_max_bet" convert=""/>
+            <field index="68" name="max_place_ep" convert=""/>
+            <field index="69" name="req_guid" convert=""/>
+            <field index="70" name="cp_num" convert=""/>
+            <field index="71" name="cp_den" convert=""/>
+            <field index="72" name="flags" convert=""/>
+            <field index="73" name="abs_least_max_bet" convert=""/>
+            <field index="74" name="lp_max_bet_cap" convert=""/>
+            <field index="75" name="rp_num" convert=""/>
+            <field index="76" name="rp_den" convert=""/>
+        </level>
+    </response>
+</oxip>

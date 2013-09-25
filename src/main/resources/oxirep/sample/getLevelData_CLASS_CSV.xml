@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+				<!--OXi oxirepserver 7.0 getLevelData-->
+				<oxip version="8.0" time="2013-08-29 16:19:17">
+					<auth token=""/>
+					<response code="001" desc="success" debug="" name="getLevelData">
+						<level msgId="3454874" name="CLASS" format="CSV" rowCount="8">10,13495,2008-11-21 18:10:31,OTHER_SPORTS,|Boxing|,A,Y,,Y,670,,ST,,IPLYFBJSCMHQGNAEZ,,,CN,,,,,Y,N,N
+303,22090,2008-11-21 18:10:31,OTHER_SPORTS,|Handball|,A,Y,,Y,800,,ST,,IPYFBJSCMHQGNAEZ,,,,,,,,Y,N,N
+320,16190,2008-11-21 18:10:31,OTHER_SPORTS,|Volleyball|,A,Y,,Y,1040,,ST,,IPYFBJSCMHQGNAEZ,,,,,,,,Y,N,N
+347,13543,2008-11-21 18:10:31,OTHER_SPORTS,|Futsal|,A,Y,,Y,770,,ST,,IPLYFBJSCMHQGNAEZ,,,,,,,,Y,N,N
+348,13534,2008-11-21 18:10:31,OTHER_SPORTS,|GAA Football|,A,Y,,Y,780,,ST,,IPLYFBJSCMHQGNEZ,,,,,,,,Y,N,N
+349,20178,2008-11-21 18:10:31,OTHER_SPORTS,|GAA Hurling|,A,Y,,Y,820,,ST,,IPLYFBJSCMHQGNEZ,,,,,,,,N,N,N
+402,13548,2009-01-14 12:49:52,OTHER_SPORTS,|UFC|,A,Y,,Y,1035,,ST,,IPLYFBJSCMHQGNEZ,,,,,,,,Y,N,N
+437,13347,2012-03-27 12:04:52,OTHER_SPORTS,|Cycling - Virtual|,A,Y,,Y,705,,VR,,IZ,,,,0.25,0.50,,,Y,Y,N</level></response></oxip>

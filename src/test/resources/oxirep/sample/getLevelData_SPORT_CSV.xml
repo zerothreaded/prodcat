@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+				<!--OXi oxirepserver 7.0 getLevelData-->
+				<oxip version="8.0" time="2013-09-15 18:24:17">
+					<auth token=""/>
+					<response code="001" desc="success" debug="" name="getLevelData">
+						<level msgId="5731309" name="SPORT" format="CSV" rowCount="69">1,|American Football|,1,y
+2,|Baseball|,2,y
+5,|Boxing|,10,c
+6,|Cricket|,4,y
+7,|Cycling|,301,c
+8,|Darts|,19,y
+9,|Football|,5,y
+10,|GAA Football|,348,c
+11,|Golf|,6,y
+12,|Handball|,303,c
+13,|GAA Hurling|,349,c
+18,|Motor Racing|,11,y
+19,|TV/Specials|,15,y
+20,|Politics|,12,y
+21,|Rugby League|,13,y
+22,|Rugby Union|,14,y
+23,|Snooker|,20,y
+24,|Tennis|,17,y
+25,|UFC|,402,c
+26,|Ice Hockey|,10,y
+27,|Basketball|,3,y
+28,|Poker|,306,c
+29,|Winter Sports|,18,y
+30,|Volleyball|,320,c
+31,|Water Polo|,321,c
+32,|Athletics|,295,c
+33,|Bowls|,298,c
+34,|Beach Soccer|,341,c
+37,|Australian Rules|,18,c
+39,|Beach Volleyball|,342,c
+40,|Hockey|,304,c
+41,|Pool|,34,c
+42,|Greyhounds|,8,y
+43,|Horse Racing|,9,y
+45,|Futsal|,347,c
+46,|Bandy|,297,c
+47,|Yachting/Sailing|,322,c
+49,|Fishing|,299,c
+51,|Jockey Challenge|,416,c
+52,|Motorbikes|,32,y
+54,|Rowing|,357,c
+55,|Badminton|,296,c
+56,|Table Tennis|,319,c
+57,|Floorball|,346,c
+58,|Delhi 2010|,423,c
+59,|Netball|,352,c
+60,|Financial|,431,c
+61,|Hotbox|,433,c
+62,|Paralympics|,435,c
+63,|Squash|,307,c
+64,|Lacrosse|,305,c
+65,|Swimming|,318,c
+66,|Wrestling|,364,c
+67,|Canoeing|,343,c
+68,|Equestrian|,302,c
+69,|Synchronised Swimming|,360,c
+70,|Triathlon|,362,c
+71,|Shooting|,358,c
+72,|Gymnastics|,22,c
+73,|Archery|,339,c
+74,|Diving|,344,c
+75,|Judo|,350,c
+76,|Fencing|,345,c
+77,|Weightlifting|,363,c
+78,|Taekwondo|,361,c
+79,|Modern Pentathlon|,351,c
+80,|Test Horse Racing|,31,y
+81,|Horse Racing - Italy|,446,c
+82,|Softball|,359,c
+83,|GibBashing|,666,e
+</level></response></oxip>

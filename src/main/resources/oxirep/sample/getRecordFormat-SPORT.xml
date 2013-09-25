@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--OXi oxirepserver 8.0 getRecordFormat-->
+<oxip version="8.0" time="2013-08-29 16:21:57">
+    <auth token=""/>
+    <response code="001" desc="success" debug="" name="getRecordFormat" sessionId="-1" userId="-1" delimiter="|" escape="\" mapping="">
+        <header>
+            <field index="0" name="type"/>
+            <field index="1" name="level"/>
+            <field index="2" name="id"/>
+            <field index="3" name="pkValue"/>
+            <field index="4" name="scope"/>
+            <field index="5" name="queue"/>
+            <field index="6" name="auditId"/>
+            <field index="7" name="created"/>
+            <field index="8" name="creator"/>
+            <field index="9" name="sequenceId"/>
+            <field index="10" name="pollSize"/>
+            <field index="11" name="priority"/>
+            <field index="12" name="deltaColumns"/>
+        </header>
+        <level name="SPORT">
+            <field index="13" name="sport_id" convert=""/>
+            <field index="14" name="name" convert=""/>
+            <field index="15" name="ob_id" convert=""/>
+            <field index="16" name="ob_level" convert=""/>
+        </level>
+    </response>
+</oxip>

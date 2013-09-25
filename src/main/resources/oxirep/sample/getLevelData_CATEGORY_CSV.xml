@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+				<!--OXi oxirepserver 7.0 getLevelData-->
+				<oxip version="8.0" time="2013-08-28 14:14:30">
+					<auth token=""/>
+					<response code="001" desc="success" debug="" name="getLevelData">
+						<level msgId="5731183" name="CATEGORY" format="CSV" rowCount="32">1,AMERICAN_FB,|American Football|,7,Y,1
+2,BASEBALL,|Baseball|,7,Y,2
+3,BASKETBALL,|Basketball|,7,Y,3
+4,CRICKET,|Cricket|,7,Y,4
+5,FOOTBALL,|Football|,7,Y,6
+6,GOLF,|Golf|,7,Y,7
+8,GREYHOUNDS,|Greyhounds|,7,Y,8
+9,HORSE_RACING,|Horse Racing|,7,Y,9
+10,ICE_HOCKEY,|Ice Hockey|,7,Y,10
+11,MOTOR_RACING,|Motor Racing|,7,Y,11
+12,POLITICS,|Politics|,7,Y,13
+13,RUGBY_LEAGUE,|Rugby League|,7,Y,14
+14,RUGBY_UNION,|Rugby Union|,7,Y,15
+15,SPECIALS,|TV/Specials|,7,Y,17
+16,OTHER_SPORTS,|Other Sports|,7,Y,12
+17,TENNIS,|Tennis|,7,Y,18
+18,WINTER_SPORTS,|Winter Sports|,7,Y,19
+19,DARTS,|Darts|,7,Y,5
+20,SNOOKER,|Snooker|,7,Y,16
+21,PREV_COURSE,|Previous Course|,7,N,16
+22,PREV_DOGS,|Previous Dogs|,7,N,16
+23,PREV_EB,|Previous Early Birds|,7,N,16
+24,PREV_FOOTBALL,|Previous Football|,7,Y,16
+25,PREV_HORSE,|Previous Horses|,7,N,16
+26,PREV_LOTTO,|Previous Lotto|,7,N,16
+27,PREV_OTHERS,|Previous Others|,7,Y,16
+28,PREV_AP,|Previous Ante Post|,7,N,16
+29,PREV_BP,|Previous Board Price|,7,N,16
+30,PREV_LBO,|Previous LBO|,7,N,16
+31,TEST_HORSE_RACIN,|Test Horse Racing|,7,Y,99
+32,MOTORBIKES,|Motorbikes|,7,Y,11
+33,VR_CONTAINER,Virtual World Container,7,Y,999</level></response></oxip>

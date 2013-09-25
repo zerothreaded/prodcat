@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Product Data Service</title>
+	<!-- styles -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="assets/css/docs.css" rel="stylesheet">
+	<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <link href="app.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="assets/ico/favicon.png">
+
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script>
+		$(document).ready(function () {
+			$.get("http://localhost:8080/pdsmonitor/pds/catalog/sports",function(data,status) {
+		    	alert("Data: " + data + "\nStatus: " + status);
+		    	for(var i = 0; i < data.length; i++) {
+		    		var curr = $("#loadthis").html();
+		    		var sport = data[i];
+		    		$("#loadthis").html(curr + sport.name + "<br/>");
+		    	}
+		    	
+		 	});
+		});
+	</script>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="row">
+        <div class="span9">
+
+            <!-- Navbar -->
+
+
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="brand" href="./index.html">William Hill PDS</a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav">
+                                <li class="">
+                                    <a href="/catalogs">Catalogs</a>
+                                </li>
+                                <li class="">
+                                    <a href="/sports">Sports</a>
+                                </li>
+                                <li class="">
+                                    <a href="/events">Events</a>
+                                </li>
+                                <li class="">
+                                    <a href="/markets">Markets</a>
+                                </li>
+
+                            </ul>
+                            <ul class="nav pull-right">
+                                <li class="dropdown">
+                                    <a href="#"
+                                       class="dropdown-toggle"
+                                       data-toggle="dropdown">
+                                        Login
+                                        <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="">
+                                            <a href="./imports">Imports</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="./exports">Exports</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="span6">
+       		<div id="loadthis">
+       		</div>
+        </div>
+        <div class="span3">
+
+            <div class="page-header">
+                <h1>Button groups</h1>
+
+            </div>
+
+            <h2>Examples</h2>
+            <p>Two basic options, along with two more specific variations.</p>
+
+            <h3>Single button group</h3>
+            <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
+            <div class="bs-docs-example">
+                <div class="btn-group" style="margin: 9px 0 5px;">
+                    <button class="btn">Left</button>
+                    <button class="btn">Middle</button>
+                    <button class="btn">Right</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="row">
+        <div class="span12">
+            <ul class="nav nav-pills">
+                <li class="">
+                    <a href="./admin">Admin</a>
+                </li>
+                <li class="">
+                    <a href="./users">Users</a>
+                </li>
+                <li class="">
+                    <a href="./logs">Logs</a>
+                </li>
+                <li class="">
+                    <a href="./operations">Operations</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

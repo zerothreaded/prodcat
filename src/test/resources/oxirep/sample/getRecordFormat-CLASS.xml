@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--OXi oxirepserver 8.0 getRecordFormat-->
+<oxip version="8.0" time="2013-08-29 16:21:53">
+    <auth token=""/>
+    <response code="001" desc="success" debug="" name="getRecordFormat" sessionId="-1" userId="-1" delimiter="|" escape="\" mapping="">
+        <header>
+            <field index="0" name="type"/>
+            <field index="1" name="level"/>
+            <field index="2" name="id"/>
+            <field index="3" name="pkValue"/>
+            <field index="4" name="scope"/>
+            <field index="5" name="queue"/>
+            <field index="6" name="auditId"/>
+            <field index="7" name="created"/>
+            <field index="8" name="creator"/>
+            <field index="9" name="sequenceId"/>
+            <field index="10" name="pollSize"/>
+            <field index="11" name="priority"/>
+            <field index="12" name="deltaColumns"/>
+        </header>
+        <level name="CLASS">
+            <field index="13" name="ev_class_id" convert=""/>
+            <field index="14" name="user_id" convert=""/>
+            <field index="15" name="cr_date" convert=""/>
+            <field index="16" name="category" convert=""/>
+            <field index="17" name="name" convert=""/>
+            <field index="18" name="status" convert=""/>
+            <field index="19" name="fo_avail" convert=""/>
+            <field index="20" name="url" convert=""/>
+            <field index="21" name="displayed" convert=""/>
+            <field index="22" name="disporder" convert=""/>
+            <field index="23" name="bir_delay" convert=""/>
+            <field index="24" name="sort" convert=""/>
+            <field index="25" name="blurb" convert="url"/>
+            <field index="26" name="channels" convert=""/>
+            <field index="27" name="fastkey" convert=""/>
+            <field index="28" name="languages" convert=""/>
+            <field index="29" name="flags" convert=""/>
+            <field index="30" name="tc_stk_factor" convert=""/>
+            <field index="31" name="fc_stk_factor" convert=""/>
+            <field index="32" name="tc_min_stk_limit" convert=""/>
+            <field index="33" name="fc_min_stk_limit" convert=""/>
+            <field index="34" name="async_betting" convert=""/>
+            <field index="35" name="cashout_avail" convert=""/>
+            <field index="36" name="show_mkt_tags" convert=""/>
+        </level>
+    </response>
+</oxip>
